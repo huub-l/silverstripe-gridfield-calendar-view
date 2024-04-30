@@ -1,5 +1,36 @@
 # Change Log
 
+## [3.1.0](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/tree/3.1.0) (2024-04-30)
+[Full Changelog](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/compare/3.0.1...3.1.0)
+- `GridFieldCalendarView::handleCalendarFeed()` now returns a json string with the calendar data as under the `data` key, this a backwards compatible change
+- Changing the month/year in the calendar now properly updates the state in the url when the new response format is used
+- Added event `calendar-data-updated` when the data loads
+
+## [3.0.1](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/tree/3.0.1) (2024-04-30)
+[Full Changelog](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/compare/3.0.0...3.0.1)
+
+## [3.0.0](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/tree/3.0.0) (2024-03-28)
+[Full Changelog](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/compare/2.2.1...3.0.0)
+- Breaking change you can no longer simply extend the calendar using `gridfield_calendar_data`. You must use jQuery entwine and get the default options using `this.getCalendarOptions()` on the `.ss-gridfield .ss-gridfield-calendar` element, make your changes and call `this.setCalendarOptions()` passing in the modified options before calling `this._super()`.
+
+## [2.2.1](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/tree/2.2.1) (2023-11-08)
+[Full Changelog](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/compare/2.2.0...2.2.1)
+
+## [2.2.0](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/tree/2.2.0) (2023-11-07)
+[Full Changelog](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/compare/2.1.3...2.2.0)
+
+## [2.1.3](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/tree/2.1.3) (2023-11-03)
+[Full Changelog](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/compare/2.1.2...2.1.3)
+
+## [2.1.2](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/tree/2.1.2) (2023-11-02)
+[Full Changelog](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/compare/2.1.1...2.1.2)
+
+## [2.1.1](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/tree/2.1.1) (2023-11-02)
+[Full Changelog](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/compare/2.1.0...2.1.1)
+
+## [2.1.0](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/tree/2.1.0) (2023-11-01)
+[Full Changelog](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/compare/2.0.1...2.1.0)
+
 ## [2.0.1](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/tree/2.0.1) (2019-03-26)
 [Full Changelog](https://github.com/webbuilders-group/silverstripe-gridfield-calendar-view/compare/2.0.0...2.0.1)
 

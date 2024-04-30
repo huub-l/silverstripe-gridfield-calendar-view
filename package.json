@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "JS dependencies for GridField Calendar View",
   "dependencies": {
-    "fullcalendar": "^3.9.0"
+    "@fullcalendar/moment": "^6.1.9",
+    "fullcalendar": "^6.1.9"
   },
   "scripts": {
-    "install": "node movenpm.js"
+    "postinstall": "node movenpm.js"
   },
   "author": "",
   "license": "BSD-3-Clause",
